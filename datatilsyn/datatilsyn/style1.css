@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container1 {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  gap: 15px;
+  padding: 0;
+  grid-template-areas:
+    "boks billede billede billede billede boks2"
+    "boks billede billede billede billede boks2"
+    "boks billede billede billede billede boks2"
+    "boks titel titel titel titel boks2"
+    "boks skema skema skema skema boks2"
+    "footer  footer  footer  footer footer footer";
+}
+/*tablet*/
+@media screen and (max-width: 875px) {
+  .container1 {
+    grid-template-areas:
+      "billede billede billede billede billede billede"
+      "titel titel titel titel titel titel"
+      "skema skema skema skema skema skema"
+      "boks boks boks boks2 boks2 boks2"
+      "footer  footer  footer  footer footer footer";
+  }
+}
+/*mobil*/
+@media screen and (max-width: 500px) {
+  .container1 {
+    grid-template-areas:
+      "billede"
+      "titel"
+      "skema"
+      "boks"
+      "boks2"
+      "footer";
+  }
+}
+
+.one {
+  grid-area: billede;
+  text-align: center;
+}
+
+.three {
+  grid-area: boks;
+  padding: 3em;
+  background-color: #ffffff;
+}
+
+.four {
+  grid-area: boks2;
+  padding: 3em;
+  background-color: #ffffff;
+}
+.five {
+  grid-area: titel;
+  text-align: center;
+  padding: 3em;
+  background-color: #e0f2fb;
+}
+.lillecontainer {
+  grid-area: skema;
+  padding: 1em;
+  background-color: #e0f2fb;
+  /* padding-left: 400px; */
+}
+.six {
+  grid-area: footer;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.container1 > div {
+  color: #023047;
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+p {
+  font-size: 16px;
+}
+.questions {
+  font-weight: bold;
+  font-size: 18px;
+}
+.button {
+  background-color: #023047;
+  font-size: 18px;
+  color: #ebedee;
+  padding: 4px 10px;
+  border: none;
+}
+.button:hover {
+  background-color: #348ec5;
+  color: #e0f2fb;
+  transition: 1s;
+}
+.need-validation {
+  border: 6px #023047;
+}
+/*  
+.validation-error {
+  border: 5px solid red;
+}
+.validation-error + span {
+  display: block;
+}
+*/
+
+.info p {
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: left;
+}
+.info li {
+  font-size: 15px;
+  font-weight: lighter;
+}

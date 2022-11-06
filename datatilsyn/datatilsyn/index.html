@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style1.css" />
+    <script></script>
+    <title>Spørgeskema om datatilsynet</title>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="one">
+        <img src="images/data.png" alt="data" width="100%" />
+      </div>
+      <div class="three"></div>
+      <div class="four"></div>
+      <div class="five"><h2>Spørgeskema</h2></div>
+      <div class="lillecontainer">
+        <form name="quiz" id="quiz">
+          <div class="need-validation">
+            <p class="questions">1. Hvilket køn er du?</p>
+            <p><input type="radio" name="question1" value="Kvinde" onclick="svar()" /> Kvinde</p>
+            <p><input type="radio" name="question1" value="Mand" onclick="svar()" /> Mand</p>
+            <p><input type="radio" name="question1" value="Andet" onclick="svar()" /> Andet</p>
+          </div>
+          <br />
+          <br />
+          <div class="need-validation">
+            <p class="questions">2. Hvor gammel er du?</p>
+            <p>
+              <input type="radio" name="question2" value="under18" /> Under 18
+            </p>
+            <p><input type="radio" name="question2" value="20-30" /> 20 - 30</p>
+            <p>
+              <input type="radio" name="question2" value="over30" /> Over 30
+            </p>
+          </div>
+          <br />
+          <br />
+          <div class="need-validation">
+            <p class="questions">3. Har du hørt om datatilsynet før?</p>
+            <p><input type="radio" name="question3" value="ja" /> Ja</p>
+            <p><input type="radio" name="question3" value="nej" /> Nej</p>
+            <p>
+              <input type="radio" name="question3" value="vedIkke" /> Ved ikke
+            </p>
+          </div>
+          <br /><br />
+          <div class="need-validation">
+            <p class="questions">4. Ved du hvad de gør?</p>
+            <p><input type="radio" name="question4" value="ja" /> Ja</p>
+            <p><input type="radio" name="question4" value="nej" /> Nej</p>
+            <p>
+              <input type="radio" name="question4" value="vedIkke" /> Ved ikke
+            </p>
+          </div>
+          <br /><br />
+          <div class="need-validation">
+            <p class="questions">
+              5. Kender du til dine rettigheder <br />
+              inden for datatilsyn?
+            </p>
+            <textarea name="question5" id="" cols="50" rows="3"></textarea>
+          </div>
+          <br /><br />
+          <div class="info">
+
+              <h3>Datatilsynet beskytter ens data<h3>
+                <br>
+              <p>
+                Datatilsynet er den centrale uafhængige myndighed, der fører
+                tilsyn med,<br> at reglerne om databeskyttelse bliver overholdt. Vi
+                rådgiver og vejleder, <br> behandler klager og gennemfører tilsyn hos
+                myndigheder og virksomheder.
+              </p>
+              <br>
+              <p>
+                En vigtig opgave for Datatilsynet er at føre tilsyn med, at
+                myndigheder, <br> virksomheder og andre dataansvarlige og
+                databehandlere overholder <br>reglerne i
+                databeskyttelsesforordningen, databeskyttelsesloven og <br>
+                retshåndhævelsesloven mv.
+              </p>
+              <br>
+              <p>Hvad kan man som borger bruge Datatilsynet til?</p>
+              <br>
+              <li>Indsigt</li>
+              <li>Berigtigelse</li>
+              <li>Sletning</li>
+              <li>Begrænsning af behandling</li>
+              <li>Dataportabilitet</li>
+              <li>Indsigelse</li>
+              <li>Profilering</li>
+              <li>Ret til oplysning</li>
+  
+          </div>
+          <br /><br />
+          <div class="need-validation">
+            <p class="questions">
+              6. Er du bekymret for at nogen kan se dine data?
+            </p>
+            <p><input type="radio" name="question6" value="ja" /> Ja</p>
+            <p><input type="radio" name="question6" value="nej" /> Nej</p>
+            <p>
+              <input type="radio" name="question6" value="vedIkke" /> Ved ikke
+            </p>
+          </div>
+          <br /><br />
+          <div class="need-validation">
+            <p class="questions">
+              7. Vil du være mere opmærksom på dine data fremover?
+            </p>
+            <p><input type="radio" name="question7" value="ja" /> Ja</p>
+            <p><input type="radio" name="question7" value="nej" /> Nej</p>
+            <p>
+              <input type="radio" name="question7" value="vedIkke" /> Ved ikke
+            </p>
+          </div>
+          <br /><br />
+          <div class="need-validation">
+            <p class="questions">8. Har du delt personfølsomme data?</p>
+            <br />
+            <p>A. Om dig</p>
+            <p><input type="radio" name="question8" value="ja" /> Ja</p>
+            <p><input type="radio" name="question8" value="nej" /> Nej</p>
+            <br />
+            <p>B. Om andre</p>
+            <p><input type="radio" name="question8" value="ja" /> Ja</p>
+            <p><input type="radio" name="question8" value="nej" /> Nej</p>
+          </div>
+          <br /><br />
+          <div class="need-validation">
+            <p class="questions">
+              9. Tænker du at du fremover vil være opmærksom på hvad du deler?
+            </p>
+            <p><input type="radio" name="question9" value="ja" /> Ja</p>
+            <p><input type="radio" name="question9" value="nej" /> Nej</p>
+            <p>
+              <input type="radio" name="question9" value="vedIkke" /> Ved ikke
+            </p>
+          </div>
+          <br /><br />
+          <div class="need-validation">
+            <p class="questions">
+              10. Kunne du finde på at kontakte datatilsynet?
+            </p>
+            <p><input type="radio" name="question10" value="ja" /> Ja</p>
+            <p><input type="radio" name="question10" value="nej" /> Nej</p>
+            <p>
+              <input type="radio" name="question10" value="vedIkke" /> Ved ikke
+            </p>
+          </div>
+          <br /><br />
+          <div class="need-validation">
+            <p class="questions">
+              11. Kunne du finde på at fortælle andre om datatilsynet?
+            </p>
+            <p><input type="radio" name="question11" value="ja" /> Ja</p>
+            <p><input type="radio" name="question11" value="nej" /> Nej</p>
+            <p>
+              <input type="radio" name="question11" value="vedIkke" /> Ved ikke
+            </p>
+          </div>
+          <br /><br />
+          <div class="need-validation">
+            <p class="questions">
+              12. Er du mere tryg efter du ved mere om datatilsynet?
+            </p>
+            <p><input type="radio" name="question12" value="ja" /> Ja</p>
+            <p><input type="radio" name="question12" value="nej" /> Nej</p>
+            <p>
+              <input type="radio" name="question12" value="vedIkke" /> Ved ikke
+            </p>
+          </div>
+          <br /><br />
+           <div>
+            <label for="besked">Eventuelle bemærkninger:</label>
+            <br>
+            <textarea id="besked" cols="50" rows="5" value="besked"></textarea>
+          </div>
+          <button class="button" onclick="tak()">Send</button>
+        </form>
+      </div>
+      <div class="six">© 2022  Flow 3 - JavaScript</div>
+    </div>
+    <script src="javascript.js"></script>
+    </script>
+  </body>
+</html>
